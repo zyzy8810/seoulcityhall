@@ -1,5 +1,10 @@
 
 
+/* column-left */
+.inner3 .column-left{width: 770px;}
+/* column-right */
+.inner3 .column-right{width: 360px;}
+
 /* sc-slide */
 .sc-slide{ display: flex; }
 .sc-slide .group-header{ display: flex; flex-direction: column; width: 80px;   background-color: #d2e1e9; } 
@@ -185,7 +190,7 @@
 .sc-related .related-item +.related-item{ border-left: 1px solid #d0d0d0; }
 .sc-related .related-item .related.active{background: #e2e2e2;}
 .sc-related .related-item .related:not(.none) span{position: relative; padding-right: 15px; }
-.sc-related .related-item .related:not(.none) span::after{ position: absolute; top: 8px; right: 0px; height: 7px; width: 7px; border-style: solid; border-color: #373737; border-width: 0px 2px 2px 0px; transform: rotate(-135deg); transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1); transform-origin: center center; content: ''; }
+.sc-related .related-item .related:not(.none) span::after { position: absolute; top: 8px; right: 0px; height: 7px; width: 7px; border-style: solid; border-color: #373737; border-width: 0px 2px 2px 0px; transform: rotate(-135deg); transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1); transform-origin: center center; content: ''; }
 .sc-related .related-item .related.active:not(.none) span::after{ top: 4px; transform: rotate(45deg); transform-origin: center center; }
 .sc-related .sub-area{ display: none; position: absolute; border: 1px solid #d0d0d0; left: 0; width: 100%; bottom: calc(100% - 1px); z-index: 2; background: #fff; padding: 10px 20px 20px; }
 .sc-related .sub-list{ display: grid; grid-template-columns: repeat(4,1fr); }

@@ -1,4 +1,4 @@
-$(function () { //문서 로드 후 최후실행 1번만
+$(function () { //문서 로드 실행 1번만
     /**
      * @selectLang
      * @btnLang
@@ -14,7 +14,7 @@ $(function () { //문서 로드 후 최후실행 1번만
         autoplay: {
             delay: 2000,
             disableOnInteraction: false,
-        },
+        },//자동재생
         pagination: {
             el: ".fraction",
             type: "fraction"
@@ -97,7 +97,7 @@ $(function () { //문서 로드 후 최후실행 1번만
 
     /**
      * @tab === 9
-     * @e.shiftKey == 시프트눌렀요?
+    * @e.shiftKey == shift 눌렀는지 안 눌렀는지 - > true(누름),false(안 누름)
      */
     $('.sc-related .sub-area li:first-child').keydown(function (e) {
         key = e.keyCode
