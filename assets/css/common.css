@@ -1,141 +1,28 @@
 /* 공통요소 - 공통클래스*/
-.blind{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  margin: -1px;
-}
+.blind{ position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); margin: -1px; }
 
 /* fixed 위로가기 고정버튼 */
-
-.fixed-top {
-  position: fixed;
-  bottom: -100px;
-  left: 50%;
-  margin-left: 600px;
-  width: 34px;
-  height: 34px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-.fixed-top.show {
-  opacity: 1;
-  visibility: visible;
-  bottom: 100px;
-}
+.fixed-top { position: fixed; bottom: -100px; left: 50%; margin-left: 600px; width: 34px; height: 34px; opacity: 0; visibility: hidden; transition: 0.5s; }
+.fixed-top.show { opacity: 1; visibility: visible; bottom: 100px; }
 
 
 /* 위드만 잡는 용도 */
-.common-inner{
-  width: 1152px;
-  margin: 0 auto;
-}
+.common-inner{ width: 1152px; margin: 0 auto; }
+.headline{ font-size: 24px; font-weight: bold; }
+.inner1{ display: flex; justify-content: space-between; } .inner2 { display: flex; flex-wrap: wrap; align-items: center; align-content: space-between; justify-content: center; position: relative; background: #fff; height: 120px; padding: 0; display: block; } .inner3{ display: flex; justify-content: space-between; } .inner4{ display: flex; justify-content: space-between; padding: 50px 0 50px; border-bottom: 2px solid #222222; }
 
-.headline{
-    font-size: 24px;
-    font-weight: bold;
-}
+/* sp 이미지 */
 
-/* 슬라이드버튼 */
+/* 슬라이드버튼 */ .sc-banner .banner-slide .control-area .btn-wrap .btn.btn.autoplay.on::before, .sc-banner .banner-slide .control-area .btn-wrap .btn.btn.autoplay::before, .sc-banner .banner-slide .control-area .btn.next::before, .sc-banner .banner-slide .control-area .btn.prev::before, .sc-slide .group-slide .control-area .btn.next::before, .sc-slide .control-area .btn-wrap .btn.prev::before, .sc-slide .group-slide .control-area .btn.next::before{ display: block; width: 20px; height: 20px; background: url(../images/slide-btn.png) no-repeat 0 0; }
 
+/* 로고아이콘 */ .footer .group-info .qna-area, .sc-service .service-gnb .btn-service::after, .inner4 .sc-board .link-more::after, .inner2 .search-area .submit::after, .header .inner1 .logo::before{ background: url(../images/sp-seoul1.png) no-repeat 0 0; }
 
-.sc-banner .banner-slide .control-area .btn-wrap .btn.btn.autoplay.on::before,
-.sc-banner .banner-slide .control-area .btn-wrap .btn.btn.autoplay::before,
-.sc-banner .banner-slide .control-area .btn.next::before,
-.sc-banner .banner-slide .control-area .btn.prev::before,
-.sc-slide .group-slide .control-area .btn.next::before,
-.sc-slide .control-area .btn-wrap .btn.prev::before,
-.sc-slide .group-slide .control-area .btn.next::before{
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url(../images/slide-btn.png) no-repeat 0 0;
-}
+/* 주요뉴스 및 시민참여 */ .sc-slide .group-slide .control-area .btn.autoplay, .sc-slide .group-slide .control-area .btn.autoplay.on, .sc-slide .group-header .btn-nav.citizen span::before, .sc-slide .group-header .btn-nav.news span::before{ background: url(../images/sp-seoul2.png) no-repeat 0 0; }
 
-/* 로고아이콘 */
+/* 서울스토리 서울페스티벌 */ .sc-service .group-title .sub-area .link-story, .sc-service .group-title .sub-area .link-story::before, .sc-service .group-title .sub-area .link-festival, .sc-service .group-title .sub-area .link-festival::before{ display: inline-flex; align-items: center; position: relative; height: 30px; background: url(../images/sp-seoul3.png) no-repeat 0 0; }
 
+/* 주요서비스아이콘 */ .sc-service .ic-ask::before, .sc-service .ic-job::before, .sc-service .ic-estate::before, .sc-service .ic-study::before, .sc-service .ic-welfare::before, .sc-service .ic-house1::before, .sc-service .ic-youth::before, .sc-service .ic-mediahub::before, .sc-service .ic-idea::before, .sc-service .ic-ebook::before, .sc-service .ic-council::before, .sc-service .ic-reserve::before{ display: block; width: 60px; height: 60px; margin: 0 auto 10px; background-image: url(../images/sp-icon.png); background-repeat: no-repeat; box-sizing: border-box; }
 
-.footer .group-info .qna-area,
-.sc-service .service-gnb .btn-service::after,
-.inner4 .sc-board .link-more::after,
-.inner2 .search-area .submit::after,
-.header .inner1 .logo::before{
-  background: url(../images/sp-seoul1.png) no-repeat 0 0;
-}
+/* 푸터 이미지 */ .footer .sns-item .ic-twitter::before, .footer .sns-item .ic-insta::before, .footer .sns-item .ic-kakaostory::before, .footer .sns-item .ic-youtube::before, .footer .sns-item a.ic-naverblog::before, .footer .sns-item .ic-facebook::after{ width: 24px; height: 24px; display: block; background: url(../images/sp-sns.png); }
 
-/* 주요뉴스 및 시민참여 */
-.sc-slide .group-slide .control-area .btn.autoplay,
-.sc-slide .group-slide .control-area .btn.autoplay.on,
-.sc-slide .group-header .btn-nav.citizen span::before,
-.sc-slide .group-header .btn-nav.news span::before{
-  background: url(../images/sp-seoul2.png) no-repeat 0 0;
-}
-
-
-/* 서울스토리 서울페스티벌 */
-
-.sc-service .group-title .sub-area .link-story,
-.sc-service .group-title .sub-area .link-story::before,
-.sc-service .group-title .sub-area .link-festival,
-.sc-service .group-title .sub-area .link-festival::before{
-  display: inline-flex;
-  align-items: center;
-    position: relative;
-    height: 30px;
-    background: url(../images/sp-seoul3.png) no-repeat 0 0;
-}
-
-
-
-/* 주요서비스아이콘 */
-.sc-service .ic-ask::before,
-.sc-service .ic-job::before,
-.sc-service .ic-estate::before,
-.sc-service .ic-study::before,
-.sc-service .ic-welfare::before,
-.sc-service .ic-house1::before,
-.sc-service .ic-youth::before,
-.sc-service .ic-mediahub::before,
-.sc-service .ic-idea::before,
-.sc-service .ic-ebook::before,
-.sc-service .ic-council::before,
-.sc-service .ic-reserve::before{
-  display: block;
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 10px;
-  background-image: url(../images/sp-icon.png);
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-
-}
-
-/* 푸터 이미지 */
-.footer .sns-item .ic-twitter::before,
-.footer .sns-item .ic-insta::before,
-.footer .sns-item .ic-kakaostory::before,
-.footer .sns-item .ic-youtube::before,
-.footer .sns-item a.ic-naverblog::before,
-.footer .sns-item .ic-facebook::after{
-  width: 24px;
-  height: 24px;
-  display: block;
-  background: url(../images/sp-sns.png);
-}
-
-/* sns 아이콘 */
-.sc-media .sns-item a.ic-insta::after,
-.sc-media .sns-item a.ic-facebook::after,
-.sc-media .sns-item a.ic-twitter::after,
-.sc-media .sns-item a.ic-naverblog::after,
-.sc-media .sns-item a.ic-youtube::after,
-.sc-media .sns-item a.ic-kakaostory::after,
-.sc-seoulIssue .sns-item h2::after{
-width: 40px;
-height: 40px;display: block;
-background-image: url(../images/sp-snsicon.png)
-}
+/* sns 아이콘 */ .sc-media .sns-item a.ic-insta::after, .sc-media .sns-item a.ic-facebook::after, .sc-media .sns-item a.ic-twitter::after, .sc-media .sns-item a.ic-naverblog::after, .sc-media .sns-item a.ic-youtube::after, .sc-media .sns-item a.ic-kakaostory::after, .sc-seoulIssue .sns-item h2::after{ width: 40px; height: 40px;display: block; background-image: url(../images/sp-snsicon.png) }

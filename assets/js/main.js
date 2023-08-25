@@ -121,6 +121,7 @@ $(function () { //문서 로드 후 최후실행 1번만
             $('.fixed-top').removeClass('show')
         }
     })
+    
     $(window).trigger('scroll');
 
     $('.fixed-top .btn-top').click(function (e) {
